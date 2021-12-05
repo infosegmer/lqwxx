@@ -96,12 +96,6 @@ font-family: 'Montserrat', sans-serif;
 			var m = currentTime.getMinutes();
 			var s = currentTime.getSeconds();
 			setTimeout('renderTime()',1000);
-			if (h == 0) {
-				h = 12;
-			} else if (h > 12) { 
-				h = h - 12;
-				diem="PM";
-			}
 			if (h < 10) {
 				h = "0" + h;
 			}
@@ -634,12 +628,6 @@ canvas.addEventListener( 'touchmove', function ( e ) {
 			var m = currentTime.getMinutes();
 			var s = currentTime.getSeconds();
 			setTimeout('renderTime()',1000);
-			if (h == 0) {
-				h = 12;
-			} else if (h > 12) { 
-				h = h - 12;
-				diem="";
-			}
 			if (h < 10) {
 				h = "0" + h;
 			}
